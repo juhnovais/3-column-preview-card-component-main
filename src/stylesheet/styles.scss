@@ -1,0 +1,120 @@
+// ## Colors
+
+// ### Primary
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+// ### Neutral
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$veryLightGray: hsl(0, 0%, 95%);
+
+body {
+    background-color: $veryLightGray;
+    display: flex;
+    flex-flow: row;
+    height: auto;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: $transparentWhite;
+
+    @media only screen and (min-width: 768px) {
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+        margin: 20px;
+        border-radius: 10px;
+        max-width: 1000px;
+
+        @media only screen and (min-width: 768px) {
+            flex-flow: row;
+        }
+
+        section {
+            padding: 40px;
+            display: flex;
+            flex-flow: column;
+            flex-wrap: wrap;
+
+            img {
+                width: 60px;
+                height: auto;
+                max-height: 100%;
+            }
+
+            &.sedan {
+                background-color: $brightOrange;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                @media only screen and (min-width: 768px) {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 0px;
+                }
+
+                a {
+                    color: $brightOrange;
+                }
+            }
+
+            &.suv {
+                background-color: $darkCyan;
+
+                a {
+                    color: $darkCyan;
+                }
+            }
+
+            &.luxury {
+                background-color: $veryDarkCyan;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                @media only screen and (min-width: 768px) {
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+
+                a {
+                    color: $veryDarkCyan;
+                }
+            }
+
+            h2 {
+                color: $veryLightGray;
+                font-family: 'Big Shoulders Display', cursive;
+                text-transform: uppercase;
+            }
+
+            p {
+                line-height: 1.6;
+                margin-bottom: 40px;
+            }
+
+            a {
+                background-color: $veryLightGray;
+                padding: 10px 25px;
+                border-radius: 30px;
+                text-transform: capitalize;
+                text-decoration: none;
+                border: 2px solid $veryLightGray;
+                transition: 0.5s;
+                margin-top: auto;
+                max-width: 100px;
+                text-align: center;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $veryLightGray;
+                }
+            }
+        }
+    }
+}
