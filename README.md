@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/juhnovais/3-column-preview-card-component-main)
+- Live Site URL: [Live Site](https://juhnovais.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
